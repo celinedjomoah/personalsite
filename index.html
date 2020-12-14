@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Celine Djomoah</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo"></td>
+                <td id="navigation">
+                    <a href="#work">DESIGN</a>
+                    <a href="#bio">GRAPHICS</a>
+                    <a href="about.html">ABOUT</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Hello! First off, welcome to my page. My name is Celine Djomoah and I am a third year student
+                    pursuing a Bachelor of Science in Computer Science and Design at Northeastern University. I am an
+                    aspiring UX/UI designer with a demonstrated focus on human interaction and interface design.</h1>
+            </td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>DESIGN</h1>
+        <h2>A few projects involving journey maps and interaction design that have been impactful in my design exploration.</h2>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="Home Entry Screen.png">
+            <img onclick="magnify($(this).attr('src'))" src="Sleep.png">
+            <img onclick="magnify($(this).attr('src'))" src="experienceMap2.v2.pdf">
+            <img onclick="magnify($(this).attr('src'))" src="obstructionProject2.v2.pdf">
+            <img onclick="magnify($(this).attr('src'))" src="experienceMap1mood.png">
+
+
+
+        </div>
+    </div>
+    <div id="bio">
+        <h1>GRAPHICS</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="posterSmallScale-01.png">
+            <img onclick="magnify($(this).attr('src'))"
+                src="typePoster.png">
+            <img onclick="magnify($(this).attr('src'))"
+                src="refinedSketchesv.3.pdf">
+            <img onclick="magnify($(this).attr('src'))"
+                src="refinedSketchesv.1-04.jpg">
+                <img onclick="magnify($(this).attr('src'))"
+                src="cc.pdf">
+        </div>
+        <div id="footer">
+            <center>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-linkedin"></i></i></i></a></td>
+                    </tr>
+                </table>
+            </center>
+            <p>2020 Celine Djomoah Design</p>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
